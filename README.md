@@ -45,7 +45,9 @@ Read this section only if you want to know about the game's features, how each f
 
 -Conditional Logic.
 
--Function Calling, Modularity.
+-Function Calling
+
+-Modularity, Maintainability, Scalability.
 
 -Text Rendering, UI.
 
@@ -58,6 +60,8 @@ Read this section only if you want to know about the game's features, how each f
 -Player Choice Impact. 
 
 -Game World Navigation.
+
+-Project Management
 
 -Git Version Control
 
