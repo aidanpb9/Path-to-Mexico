@@ -3,6 +3,10 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+#ignores
+.idea/
+saved_game.json
+
 # C extensions
 *.so
 
