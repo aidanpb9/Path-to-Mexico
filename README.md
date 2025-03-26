@@ -59,6 +59,8 @@ Read this section only if you want to know about the game's features, how each f
 
 -Game World Navigation.
 
+-Git Version Control
+
 # Code Breakdown
 
 main.py: This file handles the game's flow by setting up the story to track events. It allows players to either load a saved game or start a new one, then enters a loop where they can explore rooms, interact with objects, and make choices. Players can save their progress at any time, and the game continues until a specific story goal is completed.
