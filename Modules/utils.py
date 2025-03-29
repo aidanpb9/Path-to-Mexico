@@ -165,7 +165,9 @@ def recursive_rooms(adjacent_rooms: list, current_room: str, room_select: str = 
     if original_rooms is None:
         original_rooms = adjacent_rooms.copy()
 
-    adjacent_rooms.append("cancel")
+    if not "cancel" in adjacent_rooms:
+        adjacent_rooms.append("cancel")
+
     if room_select is None:
         formatted_rooms = [format_room(room) for room in adjacent_rooms]
         slow_print(f"What room? {', '.join(formatted_rooms)}: ", end="")
