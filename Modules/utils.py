@@ -195,14 +195,14 @@ def recursive_rooms(adjacent_rooms: list, current_room: str, room_select: str = 
         return recursive_rooms(new_rooms, current_room, room_select = None, original_rooms = original_rooms)
 
 
-#format the room to have spaces instead of underlines
+#raw room to formatted, replace underline with space
 def format_room(room_name: str) -> str:
     formatted_room = room_name.lower()
     formatted_room = formatted_room.replace('_', ' ')
     return formatted_room
 
 
-#formatted room to raw, replaces space with underline and adds space before room if none found
+#formatted room to raw, replaces space with underline
 def raw_room(room_name: str) -> str:
     return room_name.replace(' ', '_').lower()
 
