@@ -57,7 +57,6 @@ def main():
 
     #main loop for game
     while not story_sequence["part1_complete"]:
-        #room.get_current_room()
         room.main_options()
 
 
