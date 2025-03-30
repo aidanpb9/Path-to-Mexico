@@ -47,6 +47,7 @@ class Story:
         slow_print("You used the bedroom key to unlock the door!")
         text_buffer()
 
+
     @staticmethod
     def attic_discovery() -> None:
         slow_print("As you step away from the pc, you notice an out of place painting leaning against the wall.")
@@ -79,6 +80,7 @@ class Story:
         "Commercial Break": "Action Movie",
         "Action Movie": "News Channel"
     }
+
 
     #Tv channel script for Rooms_tv()
     tv_program = {

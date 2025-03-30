@@ -9,6 +9,7 @@ import base64
 from dataclasses import dataclass
 from typing import Union
 
+
 #constants
 STARTING_MIN_MONEY = 110
 STARTING_MAX_MONEY = 200
