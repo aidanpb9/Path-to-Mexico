@@ -4,7 +4,8 @@ import time
 import json
 import random
 import string
-import msvcrt
+if os.name == "nt":
+    import msvcrt
 import base64
 from dataclasses import dataclass
 from typing import Union
@@ -63,8 +64,9 @@ def slow_print(text, end="\n") -> None:
     sys.stdout.write(end)
     sys.stdout.flush()
 
-    while msvcrt.kbhit():
-        msvcrt.getch()
+    if os.name =="nt":
+        while msvcrt.kbhit():
+            msvcrt.getch()
 
 
 #change user type speed in settings
