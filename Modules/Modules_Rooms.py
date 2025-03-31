@@ -427,7 +427,8 @@ class Rooms:
                     clear()
                     slow_print("Entering the attic.")
                     text_buffer()
-                    return self.examine_attic()
+                    self.story_sequence["current_room"] = "attic"
+                    return
 
                 elif user_action == 3:
                     break
@@ -522,6 +523,8 @@ class Rooms:
             return True
         else:
             clear()
+            slow_print("-----mmm.buyplanetickets.con-----")
+            text_buffer()
             print("All tickets are too expensive on this flight, try again later.")
             text_buffer()
             return False
@@ -529,6 +532,7 @@ class Rooms:
 
     #helper function for upstairs, user buys plane ticket
     def buy_tickets(self) -> None:
+
         letter_convert = { 'A': 0, 'B': 1, 'C': 2, 'D': 3, 'E': 4, 'F': 5 }
 
         seats, prices = self.generate_flight()
@@ -538,7 +542,9 @@ class Rooms:
         ticket = None
         while ticket != 'Q':
             clear()
-            slow_print(f"You have ${self.story_sequence["money"]}")
+            slow_print("-----mmm.buyplanetickets.con-----")
+            slow_print(f"You have ${self.story_sequence["money"]}.")
+            print()
             self.display_flight(seats)
             slow_print("Which seat would you like to buy (Q to quit): ", end="")
             ticket = input().strip().upper()

@@ -23,6 +23,8 @@ Current Version:
 
 4.Start the game with "python main.py"
 
+NOTE: You might need to try python3" instead of "python" if you encounter errors.
+
 # How the game works
 
 Read this section only if you want to know about the game's features, how each file works, and how I built the game + potential future plans.
