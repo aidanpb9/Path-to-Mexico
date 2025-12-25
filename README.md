@@ -1,4 +1,4 @@
-# Path-to-Mexico
+# Path-to-Mexico (Event-Driven Text Game)
 
 # Table of contents:
 
@@ -10,7 +10,7 @@
 
 # Game Overview:
 
-Path-to-Mexico is a simple game that runs in the terminal. The player navigates rooms and completes tasks in a house. The goal is to complete all necessary tasks to progress through the story. It is a 10-15 minute playthrough. You will use provided commands to interact with the environment.
+Path-to-Mexico is an event-driven text game that runs in the terminal. The player navigates rooms and completes tasks in a house. The goal is to complete all necessary tasks to progress through the story. It is a 10-15 minute playthrough. You will use provided commands to interact with the environment.
 The game will ask for a new or existing save upon startup. If you are stuck, scroll to the bottom of this file for help.
 # How to play
 Current Version:
