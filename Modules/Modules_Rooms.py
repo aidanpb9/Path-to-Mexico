@@ -53,7 +53,7 @@ class Rooms:
     #prints current room
     def get_current_room(self) -> None:
         clear()
-        slow_print(f"You are in the {format_room(self.story_sequence["current_room"])}.")
+        slow_print(f"You are in the {format_room(self.story_sequence['current_room'])}.")
 
 
     #gives possible rooms player can move to
@@ -95,7 +95,7 @@ class Rooms:
 
     #to examine a room
     def examine_room(self) -> None:
-        examine_room = f"examine_{self.story_sequence["current_room"]}"
+        examine_room = f"examine_{self.story_sequence['current_room']}"
         call_examine = getattr(self, examine_room)
         call_examine()
 
@@ -111,20 +111,20 @@ class Rooms:
 
         clear()
         slow_print("House map:\n")
-        slow_print(f"{idr("bathroom")}    {idr("entrance_room")}")
+        slow_print(f"{idr('bathroom')}    {idr('entrance_room')}")
         slow_print("   |             |")
 
         if self.story_sequence["unlocked_bedroom"]:
-            slow_print(f"{idr("bedroom")}-----{idr("living_room")}-----{idr("kitchen")}-----{idr("garage")}")
+            slow_print(f"{idr('bedroom')}-----{idr('living_room')}-----{idr('kitchen')}-----{idr('garage')}")
         else:
-            slow_print(f"{idr("bedroom")}--🔒--{idr("living_room")}-----{idr("kitchen")}-----{idr("garage")}")
+            slow_print(f"{idr('bedroom')}--🔒--{idr('living_room')}-----{idr('kitchen')}-----{idr('garage')}")
 
         slow_print("                 |")
 
         if self.story_sequence["attic_discovered"]:
-            slow_print(f"            {idr("upstairs_room")}-----{idr("attic")}")
+            slow_print(f"            {idr('upstairs_room')}-----{idr('attic')}")
         else:
-            slow_print(f"            {idr("upstairs_room")}-----{idr("?????")}")
+            slow_print(f"            {idr('upstairs_room')}-----{idr('?????')}")
         text_buffer()
 
 
@@ -255,7 +255,7 @@ class Rooms:
 
         else:
             clear()
-            slow_print(f"{self.story_sequence["tv_channel"]}:\n{Story.tv_program[self.story_sequence["tv_channel"]]}")
+            slow_print(f"{self.story_sequence['tv_channel']}:\n{Story.tv_program[self.story_sequence['tv_channel']]}")
             text_buffer()
             prompt = "1-turn tv off     2-cycle channel     3-quit\n"
             valid_options = [1,2,3]
@@ -543,7 +543,7 @@ class Rooms:
         while ticket != 'Q':
             clear()
             slow_print("-----mmm.buyplanetickets.con-----")
-            slow_print(f"You have ${self.story_sequence["money"]}.")
+            slow_print(f"You have ${self.story_sequence['money']}.")
             print()
             self.display_flight(seats)
             slow_print("Which seat would you like to buy (Q to quit): ", end="")
@@ -616,7 +616,7 @@ class Rooms:
 
             if user_action == 1:
                 clear()
-                slow_print(f"Scribbled on the sticky note is: \033[4m{decode_password(self.story_sequence["pc_password"])}\033[0m")
+                slow_print(f"Scribbled on the sticky note is: \033[4m{decode_password(self.story_sequence['pc_password'])}\033[0m")
                 text_buffer()
 
             elif user_action == 2:
